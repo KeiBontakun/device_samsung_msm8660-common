@@ -217,3 +217,6 @@ PRODUCT_COPY_FILES += \
 
 # Common Qualcomm hardware
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
+
+# USB-OTG
+persist.sys.isUsbOtgEnabled=true
