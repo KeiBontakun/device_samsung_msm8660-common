@@ -207,6 +207,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.hwc.mdpcomp.enable=false
+    
 # TWRP
 PRODUCT_COPY_FILES += \
     device/samsung/msm8660-common/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab 
@@ -214,6 +217,3 @@ PRODUCT_COPY_FILES += \
 # Common Qualcomm hardware
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
 
-# MPDecision
-#PRODUCT_COPY_FILES += \
-#	device/samsung/msm8660-common/01mpdecision:system/etc/init.d/01mpdecision
