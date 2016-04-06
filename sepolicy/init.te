@@ -5,3 +5,5 @@ allow init mdm_device:chr_file { getattr };
 allow init panel_dev:file { relabelto setattr };
 allow init power_dev:file { relabelto setattr };
 allow init self:process execmem;
+allow init system_file:file execute_no_trans;
+#allow init system_file:file { write create unlink execute_no_trans setattr };
