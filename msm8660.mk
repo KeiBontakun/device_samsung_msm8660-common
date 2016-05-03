@@ -116,8 +116,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8660 \
-    Snap
+    camera.msm8660
 
 # Chromecast
 PRODUCT_PROPERTY_OVERRIDES += \
